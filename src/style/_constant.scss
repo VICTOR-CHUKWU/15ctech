@@ -1,0 +1,13 @@
+$light-pink: #ff69b4;
+$bg-default: #fff;
+$button-box-shadow: 0 0.375em 1em rgba(25, 113, 245, 0.08);
+$button-box-shadow-hover: 0 0.125em 0.25em rgba(15, 103, 235, 0.25);
+
+// $bg-default: rgba(248, 213, 229, 0.3);
+
+$theme-primary: rgb(255, 107, 181);
+$prim-r: 255;
+$prim-g: 107;
+$prim-b: 181;
+$theme-primary-v1: rgb($prim-r - (25 * 4), $prim-g - (25 * 4), $prim-b - (25 * 4));
+$theme-primary-v2: rgb($prim-r - (25 * 3), $prim-g - (25 * 3), $prim-b - (25 * 3));

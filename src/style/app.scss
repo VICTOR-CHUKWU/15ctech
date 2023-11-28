@@ -2,4 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'global'
+@import 'constant';
+@import 'global';
+@import 'nav';
+@import 'button';
