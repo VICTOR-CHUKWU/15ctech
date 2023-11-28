@@ -11,3 +11,36 @@ $prim-g: 107;
 $prim-b: 181;
 $theme-primary-v1: rgb($prim-r - (25 * 4), $prim-g - (25 * 4), $prim-b - (25 * 4));
 $theme-primary-v2: rgb($prim-r - (25 * 3), $prim-g - (25 * 3), $prim-b - (25 * 3));
+
+@mixin before-or-after(
+  $bg: $theme-primary,
+  $w: 100%,
+  $h: 100%,
+  $br: inherit,
+  $tr: (
+    transform 0.3s,
+    opacity 0.3s
+  ),
+  $t: 0,
+  $l: 0,
+  $r: 0,
+  $b: 0,
+  $o: inherit,
+  $zi: 0,
+  $bs: none
+) {
+  position: absolute;
+  content: ' ';
+  width: $w;
+  height: $h;
+  top: $t;
+  left: $l;
+  right: $r;
+  bottom: $b;
+  z-index: $zi;
+  background: $bg;
+  border-radius: $br;
+  box-shadow: $bs;
+  opacity: $o;
+  transition: $tr;
+}

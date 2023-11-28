@@ -1,0 +1,30 @@
+@import '../constant';
+
+.header {
+    position: relative;
+
+    &::after {
+        @include before-or-after(
+            $h: 70%, 
+            $w: 50%, 
+            $o: 0.5,
+            $br: 50%,
+            $l: -1rem
+          );
+          filter: blur(150px);
+    }
+
+    &::before {
+        @include before-or-after(
+            $h: 70%, 
+            $w: 40%, 
+            $o: 0.3,
+            $br: 50%,
+            $r: -3rem,
+            $b: -3rem,
+            $l: unset,
+            $t: unset
+          );
+          filter: blur(130px);
+    }
+}
