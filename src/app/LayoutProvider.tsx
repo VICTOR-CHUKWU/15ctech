@@ -1,7 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import Nav from '@/components/Nav';
-// import Footer from '@/components/Footer';
+import Footer from '@/components/Footer';
 
 export const LayoutProvider = ({ children }: { children: React.ReactNode }) => {
     const pathname = usePathname();
@@ -9,6 +9,7 @@ export const LayoutProvider = ({ children }: { children: React.ReactNode }) => {
         <>
             {!pathname.includes('dashboard') && <Nav />}
             {children}
+            {!pathname.includes('dashboard') && <Footer />}
         </>
     )
 };

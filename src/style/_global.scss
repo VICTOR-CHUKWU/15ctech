@@ -78,30 +78,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
+    width: 200px;
     margin: 0 auto;
     min-height: 50px;
-
-    // &.circle-intersect-a {
-    //   position: relative;
-    //   width: 250px;
-    //   min-height: 50px;
-    //   background-color: transparent;
-    //   // opacity: 0;
-    //   // z-index: -1;
-
-    //   &::after {
-    //     content: '';
-    //     position: absolute;
-    //     height: 4px;
-    //     width: 4px;
-    //     background-color: $default-red;
-    //     top: 0;
-    //     right: 0;
-    //     z-index: 1;
-    //     border-radius: 50%;
-    //   }
-    // }
 
     &::after {
       content: '';
@@ -120,13 +99,21 @@ body {
       content: '';
       position: absolute;
       height: 100%;
-      width: 140%;
+      width: 120%;
       background-color: transparent;
       border-top: 2px solid $default-red;
       border-bottom: 2px solid $default-red;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 576px) {
+      width: 250px;
+
+      &::before {
+        width: 140%;
+      }
     }
 
   }
@@ -152,4 +139,67 @@ body {
     &.nextSlide {
       transform: translateX(100%);
     }
+  }
+
+  .quote {
+    position: relative;
+    &:before {
+      content: open-quote;
+      position: absolute;
+      left: -20px;
+      top: 0;
+      font-size: 24px;
+      color: $theme-red-v1;
+    }
+    &::after {
+      content: close-quote;
+      font-size: 24px;
+      bottom: -20px;
+      color: $theme-red-v1 !important;
+    }
+  }
+
+  @keyframes fadingPulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  .animate-fading-pulse {
+    animation: fadingPulse 5s infinite;
+    animation-delay: 5s;
+  }
+
+  .before-after {
+    position: relative;
+    &::after {
+      @include before-or-after(
+          $h: 70%, 
+          $w: 50%, 
+          $o: 0.5,
+          $br: 50%,
+          $l: -1rem
+        );
+        filter: blur(150px);
+  }
+
+  &::before {
+      @include before-or-after(
+          $h: 70%, 
+          $w: 40%, 
+          $o: 0.3,
+          $br: 50%,
+          $r: -3rem,
+          $b: -3rem,
+          $l: unset,
+          $t: unset
+        );
+        filter: blur(130px);
+  }
   }

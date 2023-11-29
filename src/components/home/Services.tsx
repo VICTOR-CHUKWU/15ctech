@@ -12,7 +12,7 @@ const Services = () => {
                     <Container as='span' className=' rounded-full mb-2 w-16 h-16 flex items-center justify-center text-white'>
                         <SVGIcon name={item.icon} size='small' />
                     </Container>
-                    <Container as='h5' className=' font-semibold text-center'>{item.name}</Container>
+                    <Container as='h5' className=' font-semibold text-sm md:text-base text-center'>{item.name}</Container>
                     <Container as='p' className=' text-center font-light text-xs'>{item.description}</Container>
                 </Container>
             )
@@ -21,13 +21,13 @@ const Services = () => {
     )
 
     return (
-        <Container className=' mt-20 mb-10'>
+        <Container className=' mt-20 mb-20'>
             <Container className=' container pt-20'>
                 <Container className='circle-intersect-a border-staggered'>
-                    <Container as='h4' className=' font-bold text-2xl '>Our Services</Container>
+                    <Container as='h4' className=' font-bold text-lg md:text-2xl '>Our Services</Container>
                 </Container>
 
-                <Container className=' mt-20 flex items-center justify-between flex-wrap'>
+                <Container className=' mt-20 flex items-center justify-between gap-2 flex-wrap'>
                     {
                         services.map(renderServices)
                     }

@@ -53,14 +53,48 @@
         &::before {
             position: absolute;
             content: '';
-            width: 27rem;
-            height: 27rem;
+            width: 20rem;
+            height: 20rem;
             background-color: transparent;
-            border: 20px solid $theme-red-opac-8;
+            border: 27px solid $theme-red-opac-8;
             border-radius: 50%;
             right: 0;
-            top: -1rem;
+            top: -3rem;
+            z-index: 1;
         }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 17rem;
+            height: 17rem;
+            background-color: transparent;
+            border: 27px solid $theme-red-opac-2;
+            border-radius: 50%;
+            right: 1rem;
+            top: -2rem;
+            z-index: 0;
+        }
+        @media screen and (min-width: 992px) {
+            &::before {
+               
+                width: 25rem;
+                height: 25rem;
+                border: 27px solid $theme-red-opac-8;
+                right: 1rem;
+                top: -5rem;
+            }
+    
+            &::after {
+              
+                width: 23rem;
+                height: 23rem;
+                border: 27px solid $theme-red-opac-2;
+                right: 2rem;
+                top: -4rem;
+            }
+          }
+        
     }
 
     &::after {
@@ -72,5 +106,35 @@
             $l: -1rem
           );
           filter: blur(150px);
+    }
+
+    &::before {
+        @include before-or-after(
+            $h: 70%, 
+            $w: 40%, 
+            $o: 0.3,
+            $br: 50%,
+            $r: -3rem,
+            $b: -3rem,
+            $l: unset,
+            $t: unset
+          );
+          filter: blur(130px);
+    }
+}
+
+.stepText {
+    position: relative;
+    padding-left: 35px;
+
+    &::after {
+        content: '»';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $theme-red;
+        width: 4px;
+        font-size: 3.1rem;
     }
 }
