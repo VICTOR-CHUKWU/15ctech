@@ -52,39 +52,39 @@ export const services: IService[] = [
 
 export const steps = [
     {
-        text: 'Reach out to our admin via our contact page with your request, complaints or advice'
+        text: 'Start the journey by reaching out to us. We engage in a detailed discussion to understand your project needs and goals, laying the groundwork for a successful collaboration.'
     },
     {
-        text: 'Reach out to our admin via our contact page with your request, complaints or advice'
+        text: 'Once aligned with your vision, we craft a tailored plan, defining milestones and timelines. Collaboration is key as we work together to create a roadmap that ensures project success.'
     },
     {
-        text: 'Reach out to our admin via our contact page with your request, complaints or advice'
+        text: 'With a solid plan in place, our dedicated team brings your vision to life. We maintain transparent communication throughout, ensuring your satisfaction with the delivered outcome.'
     },
 ]
 
 export const TESTIMONIALS = [
     {
         name: "Julian",
-        message: "Global HT Education has been instrumental in shaping my academic journey to Anglia Ruskin University in the UK. Their expertise, dedication, and personalized approach were evident from the start, making the entire process smooth and stress-free. Thank you, Global HT Education, for being the guiding force behind my academic achievements in the UK.",
-        img: "/img/header.jpg",
+        message: "Working with 15C Tech Ltd. has been an incredible experience. They transformed our vision into a stunning website that perfectly represents our brand. The team's attention to detail and innovative approach made the entire process smooth and enjoyable. We highly recommend their website development services",
+        img: "/img/testimonials/julian.webp",
         id: 1,
     },
     {
         name: "Chidi",
-        message: "Choosing Global HT Education  as an agent was a game-changer for my academic journey to TUS Ireland. Their unparalleled dedication and expert guidance made the entire process, from course selection to settling in a new country, an absolute breeze. The team at Global HT Education went above and beyond, providing insightful advice, timely assistance with documentation, and unwavering support throughout. Their commitment to transparency and reliability is truly commendable. Thanks to their efforts, I graduated with distinction in my MSc program.",
-        img: "/img/header.jpg",
+        message: "Choosing 15C Tech Ltd for our mobile app development was the best decision we made. Their skilled team not only delivered a feature-rich app but also guided us through every step of the process. The app's performance and user interface exceeded our expectations. We look forward to future collaborations",
+        img: "/img/testimonials/chidi.webp",
         id: 2,
     },
     {
         name: "Daniel",
-        message: "The team at Global HT Education demonstrated exceptional professionalism and genuine care for my educational journey. Their expertise and seamless coordination made the transition to studying at TUS Ireland a seamless experience. I am truly grateful for their support and highly recommend Global HT Education to anyone seeking reliable assistance in pursuing education abroad. They are not just consultants; they are your dedicated consultant in shaping a successful academic future.",
-        img: "/img/header.jpg",
+        message: "Thanks to 15C Tech Ltd, our product management strategy is now more effective and streamlined. Their expertise in product planning and execution has significantly improved our efficiency. Their dedicated team has been responsive, adaptable, and truly understands our business goals. We're thrilled with the results!",
+        img: "/img/testimonials/daniel.webp",
         id: 3,
     },
     {
         name: "Ruth Cadmus",
-        message: "Dear Global HT Education, I would like to appreciate the smooth process of my application into BCU . The reception and the lecture has been smooth we have various activities and good tutors who takes their time to ensure your foundation year is smooth to catapult you to BCU .I am truly happy to be at BCUIC",
-        img: "/img/header.jpg",
+        message: "The digital marketing services provided by 15C Tech Ltd have been a game-changer for our business. Their strategic approach and data-driven methods have significantly increased our online visibility and engagement. The results speak for themselves, and we're excited to continue growing with their expertise.",
+        img: "/img/testimonials/ruth.webp",
         id: 4,
     },
 ];

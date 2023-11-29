@@ -11,6 +11,8 @@ const Nav = () => {
     const pathname = usePathname();
     const router = useRouter();
     const [scrolled, setScrolled] = useState(false);
+    const [scrolledDown, setScrolledDown] = useState(false);
+    const [scrolledUp, setScrolledUp] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     const renderNavItems = useCallback((el: string) => {
@@ -32,13 +34,17 @@ const Nav = () => {
 
     const handleScroll: EventListener = () => {
         const currentScrollY = window.scrollY;
-
-        if (currentScrollY > lastScrollY) {
+        if (currentScrollY == 0) {
+            setScrolledDown(false)
+            setScrolledUp(false)
+        } else if (currentScrollY > lastScrollY) {
             // Scrolling down
-            setScrolled(true);
+            setScrolledDown(true)
+            setScrolledUp(false)
         } else {
             // Scrolling up
-            setScrolled(false);
+            setScrolledDown(false)
+            setScrolledUp(true)
         }
 
         lastScrollY = currentScrollY;
@@ -53,11 +59,10 @@ const Nav = () => {
     }, []);
 
     return (
-        <Container className={` fixed w-full py-2 z-50 bg-transparent`}>
+        <Container className={` fixed w-full py-2 z-50 Nav ${scrolledDown ? " hide" : scrolledUp ? 'bg-theme-red-opac-8 text-white' : "bg-transparent"}`}>
             <Container
                 as="nav"
-                className={`container flex items-center justify-between Nav ${scrolled ? " hide" : ""
-                    }`}
+                className={`container flex items-center justify-between relative `}
             >
                 {/* <Container as="span" className=" relative"> */}
                 <Link href='/' className=" relative">
