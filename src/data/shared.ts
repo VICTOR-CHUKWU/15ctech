@@ -34,18 +34,18 @@ export const services: IService[] = [
         description: 'Our high performance web-based applications are responsive '
     },
     {
-        icon: 'chrome',
+        icon: 'apps',
         name: 'Mobile Developement',
-        description: 'Our high performance web-based applications are responsive '
+        description: 'We develop native mobile applications for iOS and Android'
     },
     {
-        icon: 'chrome',
+        icon: 'assemble',
         name: 'Product Management',
-        description: 'Our high performance web-based applications are responsive '
+        description: 'We help you "Plan, Design, Develop and Manage" software applications'
     },
     {
-        icon: 'chrome',
+        icon: 'coins',
         name: 'Digital Marketing',
-        description: 'Our high performance web-based applications are responsive '
+        description: 'We carry out Digital Marketing Campaigns for products and services'
     },
 ]

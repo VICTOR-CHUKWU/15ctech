@@ -28,3 +28,49 @@
           filter: blur(130px);
     }
 }
+
+.Service {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    span {
+        background: linear-gradient(to bottom, $theme-red, $theme-red-v1);
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+        span {
+            background: linear-gradient(to bottom, $theme-red-v1, $theme-red-v2);
+        }
+    }
+}
+
+.steps {
+    position: relative;
+
+    .stepImgCont {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 27rem;
+            height: 27rem;
+            background-color: transparent;
+            border: 20px solid $theme-red-opac-8;
+            border-radius: 50%;
+            right: 0;
+            top: -1rem;
+        }
+    }
+
+    &::after {
+        @include before-or-after(
+            $h: 70%, 
+            $w: 50%, 
+            $o: 0.5,
+            $br: 50%,
+            $l: -1rem
+          );
+          filter: blur(150px);
+    }
+}

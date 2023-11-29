@@ -69,7 +69,7 @@ export interface IFeatureProject {
     link: string
 }
 
-export type SVGIconName = 'face-book' | 'instagram' | 'chrome'
+export type SVGIconName = 'face-book' | 'instagram' | 'chrome' | 'apps' | 'assemble' | 'coins'
 
 export interface IconProps {
     name?: SVGIconName & string;
