@@ -1,4 +1,4 @@
-import { BlockquoteHTMLAttributes, DetailedHTMLProps, HTMLAttributes } from "react";
+import { BlockquoteHTMLAttributes, CSSProperties, DetailedHTMLProps, HTMLAttributes } from "react";
 
 export type TAnimatTransitionName =
     | 'fadeIn'
@@ -60,4 +60,29 @@ export interface ContainerProps
     as?: TAs;
     dynamic?: boolean;
     cRef?: React.RefObject<HTMLElement>
+}
+
+export interface IFeatureProject {
+    img: string;
+    name: string;
+    description: string;
+    link: string
+}
+
+export type SVGIconName = 'face-book' | 'instagram' | 'chrome'
+
+export interface IconProps {
+    name?: SVGIconName & string;
+    className?: string;
+    size?: 'tiny' | 'small' | 'medium' | 'large' | 'inherit';
+    crop?: boolean;
+    style?: CSSProperties;
+    fontSize?: string;
+    children?: React.ReactNode;
+}
+
+export interface IService {
+    icon: SVGIconName;
+    name: string;
+    description: string;
 }

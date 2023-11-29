@@ -1,11 +1,12 @@
 import React from 'react'
-import { Header, FeaturedProjects } from '../home'
+import { Header, FeaturedProjects, Services } from '../home'
 
 const HomePage = () => {
     return (
         <div>
             <Header />
             <FeaturedProjects />
+            <Services />
         </div>
     )
 }

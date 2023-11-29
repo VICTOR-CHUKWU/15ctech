@@ -5,3 +5,20 @@
 .text-theme-primary-v1 {
     color: $theme-primary-v1;
 }
+
+.bg-theme-primary {
+    background-color: $theme-primary;
+}
+
+.bg-theme-red-opac-8 {
+    background-color: $theme-red-opac-8;
+}
+
+.bg-red-gradient-tb {
+    background: linear-gradient(to bottom, $theme-red, $theme-red-v1);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background: linear-gradient(to bottom, $theme-red-v1, $theme-red-v2);
+    }
+}

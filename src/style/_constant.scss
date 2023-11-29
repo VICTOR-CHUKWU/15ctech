@@ -1,4 +1,5 @@
 $light-pink: #ff69b4;
+$default-red: #e93470;
 $bg-default: #fff;
 $button-box-shadow: 0 0.375em 1em rgba(25, 113, 245, 0.08);
 $button-box-shadow-hover: 0 0.125em 0.25em rgba(15, 103, 235, 0.25);
@@ -11,6 +12,14 @@ $prim-g: 107;
 $prim-b: 181;
 $theme-primary-v1: rgb($prim-r - (25 * 4), $prim-g - (25 * 4), $prim-b - (25 * 4));
 $theme-primary-v2: rgb($prim-r - (25 * 3), $prim-g - (25 * 3), $prim-b - (25 * 3));
+
+$theme-red-opac-8: rgba(233, 53, 113, 0.8);
+$theme-red: rgb(233, 53, 113);
+$red-r: 233;
+$red-g: 107;
+$red-b: 181;
+$theme-red-v1: rgb($red-r - (25 * 4), $red-g - (25 * 4), $red-b - (25 * 4));
+$theme-red-v2: rgb($red-r - (25 * 3), $red-g - (25 * 3), $red-b - (25 * 3));
 
 @mixin before-or-after(
   $bg: $theme-primary,
