@@ -54,7 +54,7 @@ const FeaturedProjects = () => {
                         </Container>
                     </Container>
                     <Container className=' relative w-full mt-0'>
-                        <Container className=' absolute w-full md:w-[140%] h-[15rem] -top-full md:top-1/3 left-0 md:-left-[40%] bg-theme-red-opac-8 rounded-md z-[3] px-5 py-10'>
+                        <Container className=' absolute w-full md:w-[140%] h-[15rem] -top-full md:top-1/3 left-0 md:-left-[40%] bg-theme-blue-opac-8 text-white rounded-md z-[3] px-5 py-10'>
                             <Container as='h3' className=' font-semibold mb-2 text-center md:mb-5 text-xl md:text-2xl'>{item.name}</Container>
                             <Container as='p' className=' font-medium mb-2 md:mb-5 text-center'>{item.description}</Container>
                         </Container>
@@ -78,10 +78,10 @@ const FeaturedProjects = () => {
                     {
                         featuredProjects.map(renderProjects)
                     }
-                    <button onClick={() => decreaseCurrentIndex()} className=" outline-none bg-theme-red-opac-8 text-4xl rounded-lg py-1 px-2 flex items-center justify-center absolute z-10 top-full left-[30%] md:left-[40%] xl:left-[45%] ">
+                    <button onClick={() => decreaseCurrentIndex()} className=" outline-none bg-theme-blue-opac-8 text-4xl rounded-lg py-1 px-2 flex items-center justify-center absolute z-10 top-full left-[30%] md:left-[40%] xl:left-[45%] ">
                         <ArrowLeftIcon className="pointer-events-none text-white w-7 h-7  mr-1" />
                     </button>
-                    <button onClick={() => increaseCurrentIndex()} className=" outline-none bg-theme-red-opac-8 text-4xl rounded-lg py-1 px-2 flex items-center justify-center absolute z-10 top-full right-[30%] md:right-[40%] xl:right-[45%] ">
+                    <button onClick={() => increaseCurrentIndex()} className=" outline-none bg-theme-blue-opac-8 text-4xl rounded-lg py-1 px-2 flex items-center justify-center absolute z-10 top-full right-[30%] md:right-[40%] xl:right-[45%] ">
                         <ArrowRightIcon className="pointer-events-none text-white w-7 h-7  mr-1" />
                     </button>
                 </Container>

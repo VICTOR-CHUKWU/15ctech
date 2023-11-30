@@ -13,17 +13,25 @@ $prim-b: 181;
 $theme-primary-v1: rgb($prim-r - (25 * 4), $prim-g - (25 * 4), $prim-b - (25 * 4));
 $theme-primary-v2: rgb($prim-r - (25 * 3), $prim-g - (25 * 3), $prim-b - (25 * 3));
 
-$theme-red-opac-8: rgba(233, 53, 113, 0.8);
-$theme-red-opac-2: rgba(233, 53, 113, 0.2);
-$theme-red: rgb(233, 53, 113);
-$red-r: 233;
-$red-g: 107;
-$red-b: 181;
+$theme-red-opac-8: rgba(180, 26, 26, 0.8);
+$theme-red-opac-2: rgba(180, 26, 26, 0.2);
+$theme-red: rgb(180, 26, 26);
+$red-r: 180;
+$red-g: 26;
+$red-b: 26;
 $theme-red-v1: rgb($red-r - (25 * 4), $red-g - (25 * 4), $red-b - (25 * 4));
 $theme-red-v2: rgb($red-r - (25 * 3), $red-g - (25 * 3), $red-b - (25 * 3));
+$theme-blue: rgb(13, 44, 99);
+$theme-blue-opac-8: rgba(13, 44, 99,0.8);
+$theme-blue-opac-2: rgba(13, 44, 99,0.2);
+$blue-r: 13;
+$blue-g: 44;
+$blue-b: 99;
+$theme-blue-v1: rgb($blue-r - (25 * 4), $blue-g - (25 * 4), $blue-b - (25 * 4));
+$theme-blue-v2: rgb($blue-r - (25 * 3), $blue-g - (25 * 3), $blue-b - (25 * 3));
 
 @mixin before-or-after(
-  $bg: $theme-primary,
+  $bg: $theme-blue,
   $w: 100%,
   $h: 100%,
   $br: inherit,

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Lobster } from 'next/font/google'
+import { Lobster, Poppins } from 'next/font/google'
 import { LayoutProvider } from './LayoutProvider'
 import '@/style/app.scss'
 
-const lobster = Lobster({ subsets: ['latin', 'cyrillic', 'cyrillic-ext'], weight: '400' })
+// const lobster = Lobster({ subsets: ['latin', 'cyrillic', 'cyrillic-ext'], weight: '400' })
+const popins = Poppins({ subsets: ['latin'], weight: ['100', '200', '400', '600', '700', '800'] })
 
 export const metadata: Metadata = {
   title: '15C Tech Ltd ',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={lobster.className}>
+      <body className={popins.className}>
         <LayoutProvider>
           {children}
         </LayoutProvider>

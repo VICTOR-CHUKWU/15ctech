@@ -1,5 +1,6 @@
 .button {
-    background-color: $theme-red;
+    // background-color: $theme-blue;
+    background: linear-gradient(to right, $theme-blue , $theme-red);
     color: white;
     outline: none;
     min-width: 8rem;

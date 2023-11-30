@@ -59,7 +59,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <Container className={` fixed w-full py-2 z-50 Nav ${scrolledDown ? " hide" : scrolledUp ? 'bg-theme-red-opac-8 text-white' : "bg-transparent"}`}>
+        <Container className={` fixed w-full py-2 z-50 Nav ${scrolledDown ? " hide" : scrolledUp ? 'bg-theme-blue-opac-8 text-white' : "bg-transparent"}`}>
             <Container
                 as="nav"
                 className={`container flex items-center justify-between relative `}
