@@ -39,7 +39,7 @@ const _SVGIcon: FC<
                         );
                     case "chrome":
                         return (
-                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-chrome" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-chrome" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                                 <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -50,7 +50,7 @@ const _SVGIcon: FC<
                         );
                     case "apps":
                         return (
-                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-apps" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-apps" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
                                 <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
@@ -61,7 +61,7 @@ const _SVGIcon: FC<
                         );
                     case "assemble":
                         return (
-                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-assembly" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-assembly" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
                                 <path d="M15.5 9.422c.312 .18 .503 .515 .5 .876v3.277c0 .364 -.197 .7 -.515 .877l-3 1.922a1 1 0 0 1 -.97 0l-3 -1.922a1 1 0 0 1 -.515 -.876v-3.278c0 -.364 .197 -.7 .514 -.877l3 -1.79c.311 -.174 .69 -.174 1 0l3 1.79h-.014z" />
@@ -69,7 +69,7 @@ const _SVGIcon: FC<
                         );
                     case "coins":
                         return (
-                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-coins" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <SVG xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-coins" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z" />
                                 <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" />
