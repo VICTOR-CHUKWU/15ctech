@@ -50,3 +50,15 @@
         background: linear-gradient(to bottom, $theme-red-v1, $theme-red-v2);
     }
 }
+
+.text-gradient {
+    background: linear-gradient(
+      to right,
+      $theme-blue,
+      $theme-red,
+      $theme-red,
+      $theme-blue
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }

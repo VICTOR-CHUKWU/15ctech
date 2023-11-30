@@ -29,7 +29,7 @@ const Nav = () => {
                 {name}
             </Link>
         );
-    }, []);
+    }, [pathname]);
     let lastScrollY = 0;
 
     const handleScroll: EventListener = () => {

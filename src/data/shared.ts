@@ -27,7 +27,7 @@ export const featuredProjects: IFeatureProject[] = [
     },
 ]
 
-export const services: IService[] = [
+export const subServices: IService[] = [
     {
         icon: 'chrome',
         name: 'Website developement',
@@ -88,3 +88,26 @@ export const TESTIMONIALS = [
         id: 4,
     },
 ];
+
+export const services: IService[] = [
+    {
+        icon: 'chrome',
+        name: 'Web Application Development',
+        description: `Our high performance web-based applications are responsive and scalable and can be easily integrated with other web-based or mobile applications.`
+    },
+    {
+        icon: 'apps',
+        name: 'Mobile Application Developement',
+        description: `We develop native mobile applications for iOS and Android with amazing user interfaces.`
+    },
+    {
+        icon: 'assemble',
+        name: 'Product Management',
+        description: `We help you "Plan, Design, Develop and Manage" software applications to automate your business processes.`
+    },
+    {
+        icon: 'coins',
+        name: 'Digital Marketing',
+        description: `We carry out Digital Marketing Campaigns for products and services ensuring that you reach your desired customers. Using analytics, we are able to make informed decisions and properly focus our campaings on what works for you.`
+    },
+]

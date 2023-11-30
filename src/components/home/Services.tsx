@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import { AnimateScrollReveal, Container, SVGIcon } from '../shared'
 import { IService } from '@/types'
-import { services } from '@/data'
+import { subServices } from '@/data'
 import S from '@/style/page/home.module.scss'
 
 const Services = () => {
@@ -29,7 +29,7 @@ const Services = () => {
 
                 <AnimateScrollReveal className=' mt-20 flex items-center justify-between gap-2 flex-wrap'>
                     {
-                        services.map(renderServices)
+                        subServices.map(renderServices)
                     }
                 </AnimateScrollReveal>
             </Container>

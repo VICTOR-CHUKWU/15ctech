@@ -238,3 +238,53 @@ body {
     clip-path: ellipse(100% 15% at -15% 100%);
     }
 }
+
+.folded-paper, .folded-paper-mission {
+  position: relative;
+  width: 100%;
+  // max-width: 450px;
+  margin: 0 auto;
+  background-color: white;
+  transform: skewY(-5deg) translateY(10%) scale(0.94);
+  transition: 
+    box-shadow var(--duration) var(--ease),
+    background-color var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+  
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    background-color: rgba(102, 102, 187, 0.1);
+    width: 25%;
+    height: 100%;
+    transition: 
+      background-color var(--duration) var(--ease),
+      transform var(--duration) var(--ease);
+  }
+  
+  &:before {
+    top: 0;
+    right: calc(100% - 1px);
+    transform-origin: 100% 100%;
+    transform: skewY(-35deg) scaleX(-1);
+    z-index: -1;
+  }
+  
+  &:after {
+    top: 0;
+    left: calc(100% - 1px);
+    transform-origin: 0 0;
+    transform: skewY(-35deg) scaleX(-1);
+    z-index: 2;
+  }
+}
+
+.folded-paper-mission {
+  &:before,
+  &:after {
+    background-color: rgba(187, 102, 159, 0.1);
+   
+  }
+}
