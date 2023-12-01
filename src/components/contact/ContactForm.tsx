@@ -1,12 +1,13 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { InlineErr, Container } from "../shared";
 import { messageFormSchema } from '@/utils';
-import { log } from 'console';
+import { toast, ToastContainer } from "react-toastify";
 
 const ContactForm = () => {
+    const [loading, setLoading] = useState(false)
 
     const {
         control,
@@ -28,6 +29,7 @@ const ContactForm = () => {
     });
 
     const submitForm = async (formData: any) => {
+        setLoading(true)
         try {
             const add = await fetch('/api/contact', {
                 method: 'POST',
@@ -37,18 +39,22 @@ const ContactForm = () => {
                 body: JSON.stringify(formData)
             });
             const content = await add.json();
-            console.log(content, 'content');
-
+            if (content) {
+                toast.success(content.message || "your message has been recieved");
+                reset()
+            }
         } catch (error) {
             console.log(error);
+            toast.error('message not sent')
 
 
+        } finally {
+            setLoading(false)
         }
-        console.log(formData, 'formdata');
-
     }
     return (
         <Container className=' mt-16'>
+            <ToastContainer />
             <Container className=' container py-6 px-8 bg-slate-50 rounded-md'>
                 <form onSubmit={handleSubmit(submitForm)}>
                     <div className=" grid grid-cols-1 md:grid-cols-2 gap-3 pb-3 mb-4">
@@ -176,7 +182,7 @@ const ContactForm = () => {
                         </span>
                     </div>
                     <Container className=' flex justify-center'>
-                        <button type='submit' className='button w-48 h-16'>Send message</button>
+                        <button disabled={loading} type='submit' className='button w-48 h-16'>{loading ? 'Sending...' : 'Send message'}</button>
                     </Container>
                 </form>
             </Container>
