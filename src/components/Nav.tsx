@@ -78,7 +78,7 @@ const Nav = () => {
                     {navMenuItems.map(renderNavItems)}
                 </Container>
                 <Container as="span" className="hidden md:flex items-center">
-                    <a href="tel:+2347032880693" className=" button font-semibold">
+                    <a href="tel:+234 80 3619 0155" className=" button font-semibold">
                         <PhoneIcon className="pointer-events-none text-white w-5 h-5  mr-1" />
                         Contact us</a>
                 </Container>

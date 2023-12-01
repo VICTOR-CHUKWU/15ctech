@@ -86,3 +86,7 @@ export interface IService {
     name: string;
     description: string;
 }
+
+export interface InlineErrProps {
+    err?: any;
+}

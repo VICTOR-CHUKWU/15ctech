@@ -30,8 +30,8 @@ const Header = () => {
                         <Container as='span' className='text-theme-primary-v1 text-xs italic w-14 h-14 md:w-20 md:h-20 border-[1px] border-dashed border-slate-500 flex justify-center items-center bg-white rounded-full absolute top-2 md:top-10 left-2 md:left-0 text-center'>Web Dev</Container>
                         <Container as='span' className='text-theme-primary-v1 text-xs italic w-14 h-14 md:w-20 md:h-20 border-[1px] border-dashed border-slate-500 flex justify-center items-center bg-white rounded-full absolute top-0 md:-top-7 left-40 text-center'>Mobile App</Container>
                         <Container as='span' className='text-theme-primary-v1 text-xs italic w-14 h-14 md:w-20 md:h-20 border-[1px] border-dashed border-slate-500 flex justify-center items-center bg-white rounded-full absolute top-32 -left-3 md:top-52 md:-left-5 text-center'>Product Mgt</Container>
-                        <AnimateScrollReveal duration={1.67} delay={0.13} as='span' className='w-[12rem] h-[10rem] md:w-[16rem] md:h-[15rem] lg:w-[18rem] lg:h-[17rem] xl:w-[20rem] xl:h-[19rem] animate-fading-pulse overflow-hidden absolute rounded-xl z-[2] -bottom-3 -right-1 lg:-right-5'>
-                            <Image src='/img/header.jpg' alt='image computer' layout='fill' objectFit='cover' />
+                        <AnimateScrollReveal duration={1.67} delay={0.13} as='span' className='w-[12rem] h-[10rem] md:w-[16rem] md:h-[15rem] lg:w-[18rem] lg:h-[17rem] xl:w-[20rem] xl:h-[19rem] overflow-hidden absolute rounded-xl z-[2] -bottom-3 -right-1 lg:-right-5'>
+                            <Image src='/img/sentinel.png' alt='image computer' layout='fill' objectFit='cover' className='animate-fading-pulse' />
                         </AnimateScrollReveal>
                     </AnimateScrollReveal>
                 </Container>
