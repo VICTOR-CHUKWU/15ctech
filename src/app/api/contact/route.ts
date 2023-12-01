@@ -12,7 +12,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
     const body = await request.json()
-    console.log(body, 'body');
+    console.log(body, 'body body body');
 
     const res = await fetch(process.env.NEXT_PUBLIC_BASE_URL + '/api/posts', {
         method: 'POST',
