@@ -9,8 +9,8 @@ export const navMenuItems = [
 export const featuredProjects: IFeatureProject[] = [
     {
         img: '/img/header.jpg',
-        name: 'name of the project',
-        description: `this project is described here with roles and how it is working`,
+        name: 'The Nesi App',
+        description: `A sophisticated platform designed by 15C Tech Ltd for Meristem Wealth Management, serves as a pivotal tool for administering the Electricity Stabilization Funds of the Central Bank of Nigeria (CBN) under the Nigeria Electricity Supply Industry (NESI) framework.`,
         link: 'a hyper link to the project '
     },
     {

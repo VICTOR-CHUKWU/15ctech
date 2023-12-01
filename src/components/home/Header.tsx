@@ -13,16 +13,16 @@ const Header = () => {
                     </AnimateScrollReveal>
                     <AnimateScrollReveal duration={1.65} delay={0.12} animName='fadeInLeft' as='p' className=' text-sm mb-2'>Our software and IT solutions are built to suite your specific business needs.</AnimateScrollReveal>
                     <AnimateScrollReveal duration={1.65} delay={0.12} animName='fadeInLeft' as='p' className=' text-sm mb-2'>With business intelligence reports and real time business data, our clients can make informed business decisions for improved performance.</AnimateScrollReveal>
-                    <AnimateScrollReveal delay={0.123} className=' mt-10 flex items-center gap-2 md:gap-4'>
-                        <button className=' button'>Get Started</button>
-                        <Container className=' flex flex-col gap-0'>
+                    <AnimateScrollReveal allowOverflow duration={1.65} delay={0.123} className=' mt-10 flex items-center gap-2 md:gap-4'>
+                        <button className=' button w-44 h-16'>Get Started</button>
+                        {/* <Container className=' flex flex-col gap-0'>
                             <Container as='h5' className=' text-base md:text-lg font-semibold'>20k+</Container>
                             <Container as='p' className=' text-xs'>Happy clients</Container>
                         </Container>
                         <Container className=' flex flex-col gap-0'>
                             <Container as='h5' className=' text-base md:text-lg font-semibold'>100+</Container>
                             <Container as='p' className=' text-xs'>Completed projects</Container>
-                        </Container>
+                        </Container> */}
                     </AnimateScrollReveal>
                 </AnimateScrollReveal>
                 <Container className=' mt-10 w-full md:w-1/2 shrink-0 flex justify-center md:justify-end pl-0 md:pl-3 md:mt-0 '>

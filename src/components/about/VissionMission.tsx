@@ -27,7 +27,7 @@ const VisionMission = () => {
                         </Container>
                         <Container className="w-full relative mt-7 h-[15rem] rounded-md">
                             <Image
-                                src='/img/testimonials/julian.webp'
+                                src='/img/about/vission.webp'
                                 alt='waho-we-are'
                                 layout="fill"
                                 className=' rounded-md object-cover object-center'
@@ -53,7 +53,7 @@ const VisionMission = () => {
                         </Container>
                         <Container className="w-full relative mt-7 h-[15rem] rounded-md">
                             <Image
-                                src='/img/testimonials/julian.webp'
+                                src='/img/about/mission.webp'
                                 alt='waho-we-are'
                                 fill
                                 className=' rounded-md'

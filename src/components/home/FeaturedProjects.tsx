@@ -56,7 +56,7 @@ const FeaturedProjects = () => {
                     <Container className=' relative w-full mt-0'>
                         <Container className=' absolute w-full md:w-[140%] h-[15rem] -top-full md:top-1/3 left-0 md:-left-[40%] bg-theme-blue-opac-8 text-white rounded-md z-[3] px-5 py-10'>
                             <Container as='h3' className=' font-semibold mb-2 text-center md:mb-5 text-xl md:text-2xl'>{item.name}</Container>
-                            <Container as='p' className=' font-medium mb-2 md:mb-5 text-center'>{item.description}</Container>
+                            <Container as='p' className=' font-medium text-sm mb-2 md:mb-5 text-center'>{item.description}</Container>
                         </Container>
                     </Container>
 
