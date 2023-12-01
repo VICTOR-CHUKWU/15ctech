@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { InlineErr, Container } from "../shared";
 import { messageFormSchema } from '@/utils';
+import { log } from 'console';
 
 const ContactForm = () => {
 
@@ -25,7 +27,23 @@ const ContactForm = () => {
         },
     });
 
-    const submitForm = (formData: any) => {
+    const submitForm = async (formData: any) => {
+        try {
+            const add = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            const content = await add.json();
+            console.log(content, 'content');
+
+        } catch (error) {
+            console.log(error);
+
+
+        }
         console.log(formData, 'formdata');
 
     }
