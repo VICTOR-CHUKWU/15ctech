@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Container } from "./shared";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { PhoneIcon } from "@heroicons/react/20/solid";
+import { PhoneIcon, Bars3Icon } from "@heroicons/react/20/solid";
 import { navMenuItems } from "@/data";
 
 const Nav = () => {
@@ -14,6 +14,11 @@ const Nav = () => {
     const [scrolledDown, setScrolledDown] = useState(false);
     const [scrolledUp, setScrolledUp] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false);
+
+    const closeSideBar = (url: string) => {
+        router.push(`${url}`);
+        setSidebarOpen(false);
+    };
 
     const renderNavItems = useCallback((el: string) => {
         const [name, url] = el.split("|");
@@ -28,6 +33,22 @@ const Nav = () => {
             >
                 {name}
             </Link>
+        );
+    }, [pathname]);
+
+    const renderSideNavItems = useCallback((el: string) => {
+        const [name, url] = el.split("|");
+        return (
+            <span
+                key={url}
+                onClick={() => closeSideBar(url)}
+                className={`nav-menu-item ${pathname !== "/" && url !== "/" && pathname.includes(url)
+                    ? "active"
+                    : ""
+                    }`}
+            >
+                {name}
+            </span>
         );
     }, [pathname]);
     let lastScrollY = 0;
@@ -59,31 +80,58 @@ const Nav = () => {
     }, []);
 
     return (
-        <Container className={` fixed w-full py-2 z-50 Nav ${scrolledDown ? " hide" : scrolledUp ? 'bg-theme-blue-opac-8 text-white' : "bg-transparent"}`}>
-            <Container
-                as="nav"
-                className={`container flex items-center justify-between relative `}
-            >
-                {/* <Container as="span" className=" relative"> */}
-                <Link href='/' className=" relative">
-                    <Image
-                        src="/img/15C_tech_logo.jpg"
-                        alt="logo"
-                        width={100}
-                        height={0}
-                    />
-                </Link>
-                {/* </Container> */}
-                <Container as="span" className="hidden md:flex items-center gap-6">
-                    {navMenuItems.map(renderNavItems)}
-                </Container>
-                <Container as="span" className="hidden md:flex items-center">
-                    <a href="tel:+234 80 3619 0155" className=" button font-semibold">
-                        <PhoneIcon className="pointer-events-none text-white w-5 h-5  mr-1" />
-                        Contact us</a>
+        <>
+            <Container className={` fixed w-full py-2 z-50 Nav ${scrolledDown ? " hide" : scrolledUp ? 'bg-theme-blue-opac-8 text-white' : "bg-transparent"}`}>
+                <Container
+                    as="nav"
+                    className={`container flex items-center justify-between relative `}
+                >
+                    {/* <Container as="span" className=" relative"> */}
+                    <Link href='/' className=" relative">
+                        <Image
+                            src="/img/15C_tech_logo.jpg"
+                            alt="logo"
+                            width={100}
+                            height={0}
+                        />
+                    </Link>
+                    {/* </Container> */}
+                    <Container as="span" className="hidden md:flex items-center gap-6">
+                        {navMenuItems.map(renderNavItems)}
+                    </Container>
+                    <Container as="span" className="hidden md:flex items-center">
+                        <a href="tel:+234 80 3619 0155" className=" button font-semibold">
+                            <PhoneIcon className="pointer-events-none text-white w-5 h-5  mr-1" />
+                            Contact us</a>
+                    </Container>
+                    <Container onClick={() => setSidebarOpen(!sidebarOpen)} as='span' className=" flex items-center justify-center w-9 h-9 rounded-full bg-slate-50 md:hidden">
+                        <Bars3Icon className="pointer-events-none text-slate-700 w-5 h-5  mr-1" />
+                    </Container>
                 </Container>
             </Container>
-        </Container>
+            <div
+                className={`side-bar text-white block md:hidden ${sidebarOpen && "show-side-bar"}`}
+            >
+                <div className=" flex items-end justify-end">
+                    <button
+                        onClick={() => setSidebarOpen(!sidebarOpen)}
+                        className=" rounded-full w-8 h-8 bg-red-500 flex items-center justify-center outline-none border-0 cursor-pointer"
+                    >
+                        <span className="text-white font-bold text-lg">x</span>
+                    </button>
+                </div>
+                <div className=" w-full h-full flex mt-8 flex-col gap-5">
+                    {navMenuItems.map(renderSideNavItems)}
+                    <span className="flex flex-col gap-10">
+                        <Container as="span" className="flex md:hidden items-center">
+                            <a href="tel:+234 80 3619 0155" className=" button font-semibold">
+                                <PhoneIcon className="pointer-events-none text-white w-5 h-5  mr-1" />
+                                Contact us</a>
+                        </Container>
+                    </span>
+                </div>
+            </div>
+        </>
     );
 };
 

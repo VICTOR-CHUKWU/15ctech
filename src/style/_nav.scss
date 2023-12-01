@@ -42,3 +42,22 @@
         }
       }
 }
+
+.side-bar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right,$theme-blue-v2,$theme-blue-opac-8);
+  padding: 2rem;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+  z-index: 200;
+}
+
+.show-side-bar {
+  transform: translateX(0);
+}
