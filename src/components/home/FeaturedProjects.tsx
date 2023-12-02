@@ -74,7 +74,7 @@ const FeaturedProjects = () => {
                 <Container className='circle-intersect-a border-staggered'>
                     <Container as='h4' className=' font-bold text-lg md:text-2xl '>Featured Projects</Container>
                 </Container>
-                <Container className='h-[32rem] md:h-[30rem] mt-20 relative'>
+                <Container className='h-[32rem] md:h-[30rem] mt-12 md:mt-20 relative'>
                     {
                         featuredProjects.map(renderProjects)
                     }

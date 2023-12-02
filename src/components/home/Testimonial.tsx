@@ -57,12 +57,12 @@ const Testimonial = () => {
         };
     }, []);
     return (
-        <Container className=' mt-20 before-after'>
+        <Container className='mt-0 md:mt-20 before-after'>
             <Container className=' container relative z-[2] pt-20'>
                 <Container className='circle-intersect-a border-staggered'>
                     <Container as='h4' className=' font-bold text-lg md:text-2xl '>Testimonial</Container>
                 </Container>
-                <Container className={`container overflow-visible md:overflow-hidden px-3 md:px-0 relative z-[2] min-h-[27rem] md:min-h-[22rem] mt-28 mb-20 `}>
+                <Container className={`container overflow-visible md:overflow-hidden px-3 md:px-0 relative z-[2] min-h-[27rem] md:min-h-[22rem] mt-10 md:mt-28 mb-20 `}>
                     {TESTIMONIALS.map(renderImages)}
                 </Container>
             </Container>

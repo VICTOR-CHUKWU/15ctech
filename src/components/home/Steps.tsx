@@ -15,11 +15,11 @@ const Steps = () => {
     )
 
     return (
-        <Container className={`mt-10 lg:mt-28 mb-16 ${S.steps}`}>
-            <AnimateScrollReveal className=' container relative z-[2] pt-10 lg:pt-28 grid place-items-center grid-cols-1 md:grid-cols-2 gap-10'>
+        <Container className={`mt-0 md:mt-10 lg:mt-28 mb-2 md:mb-16 ${S.steps}`}>
+            <AnimateScrollReveal className=' container relative z-[2] pt-0 md:pt-10 lg:pt-28 grid place-items-center grid-cols-1 md:grid-cols-2 gap-10'>
                 <Container className={`w-full ${S.stepImgCont}`}>
-                    <AnimateScrollReveal duration={1.65} animName='fadeInRight' allowOverflow className=' relative z-[3] w-full h-[16rem] lg:h-[21rem] xl:h-[25rem] overflow-hidden rounded-2xl'>
-                        <Image src='/img/why-us.png' alt='image computer' layout='fill' objectFit='cover' />
+                    <AnimateScrollReveal duration={1.65} animName='fadeInRight' allowOverflow className=' relative z-[3] w-full h-[20rem] lg:h-[25rem] xl:h-[26rem]'>
+                        <Image src='/img/why-us.png' alt='image computer' layout='fill' objectFit='contain' className='' />
                     </AnimateScrollReveal>
                 </Container>
                 <Container className=' mt-10 md:mt-0 flex flex-col gap-10'>

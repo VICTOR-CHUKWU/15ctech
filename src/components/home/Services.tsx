@@ -27,7 +27,7 @@ const Services = () => {
                     <Container as='h4' className=' font-bold text-lg md:text-2xl '>Our Services</Container>
                 </Container>
 
-                <AnimateScrollReveal className=' mt-20 flex items-center justify-between gap-2 flex-wrap'>
+                <AnimateScrollReveal className=' mt-16 md:mt-20 flex items-center justify-between gap-2 flex-wrap'>
                     {
                         subServices.map(renderServices)
                     }
