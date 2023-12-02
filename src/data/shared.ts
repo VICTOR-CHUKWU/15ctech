@@ -70,7 +70,7 @@ export const TESTIMONIALS = [
         id: 1,
     },
     {
-        name: "Chidi",
+        name: "Victor",
         message: "Choosing 15C Tech Ltd for our mobile app development was the best decision we made. Their skilled team not only delivered a feature-rich app but also guided us through every step of the process. The app's performance and user interface exceeded our expectations. We look forward to future collaborations",
         img: "/img/testimonials/chidi.webp",
         id: 2,
