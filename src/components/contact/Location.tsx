@@ -11,7 +11,7 @@ const Location = () => {
                         <Container as='span' className=" flex items-center justify-center w-8 h-8 shrink-0 rounded-full bg-blue-200">
                             <HomeIcon className="pointer-events-none text-slate-600 w-5 h-5" /></Container>
                         <Container>
-                            <Container as='h4' className=' text-slate-800 font-semibold text-lg md:text-2xl'>Location:</Container>
+                            <Container as='h4' className=' text-slate-800 font-semibold text-lg md:text-xl'>Location:</Container>
                             <Container as='p' className=' text-sm md:text-base text-theme-blue'>No 14, Oba Ovoranwen Street, Gwarimpa Estate, Abuja, Nigeria.</Container>
                         </Container>
                     </Container>
@@ -19,7 +19,7 @@ const Location = () => {
                         <Container as='span' className=" flex items-center justify-center w-8 h-8 shrink-0 rounded-full bg-blue-200">
                             <EnvelopeIcon className="pointer-events-none text-slate-600 w-5 h-5" /></Container>
                         <Container>
-                            <Container as='h4' className=' text-slate-800 font-semibold text-lg md:text-2xl'>Email:</Container>
+                            <Container as='h4' className=' text-slate-800 font-semibold text-lg md:text-xl'>Email:</Container>
                             <Container as='p' className='text-sm md:text-base text-theme-blue'>info@15ctech.com</Container>
                         </Container>
                     </Container>
@@ -27,7 +27,7 @@ const Location = () => {
                         <Container as='span' className=" flex items-center justify-center w-8 h-8 rounded-full bg-blue-200">
                             <DevicePhoneMobileIcon className="pointer-events-none text-slate-600 w-5 h-5" /></Container>
                         <Container>
-                            <Container as='h4' className=' text-slate-800 font-semibold text-lg md:text-2xl'>Call:</Container>
+                            <Container as='h4' className=' text-slate-800 font-semibold text-lg md:text-xl'>Call:</Container>
                             <Container as='p' className='text-sm md:text-base text-theme-blue'>+234 80 3619 0155</Container>
                         </Container>
                     </Container>

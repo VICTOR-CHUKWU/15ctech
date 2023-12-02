@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { AnimateScrollReveal, Container } from '../shared'
 import S from '@/style/page/home.module.scss'
+import Link from 'next/link'
 
 const Header = () => {
     return (
@@ -14,7 +15,7 @@ const Header = () => {
                     <AnimateScrollReveal duration={1.65} delay={0.12} animName='fadeInLeft' as='p' className=' text-sm mb-2'>Our software and IT solutions are built to suite your specific business needs.</AnimateScrollReveal>
                     <AnimateScrollReveal duration={1.65} delay={0.12} animName='fadeInLeft' as='p' className=' text-sm mb-2'>With business intelligence reports and real time business data, our clients can make informed business decisions for improved performance.</AnimateScrollReveal>
                     <Container as='span' className=' mt-10 flex items-center gap-2 md:gap-4'>
-                        <button className=' button w-44 h-16'>Get Started</button>
+                        <Link href='/contact' className=' button w-44 h-16'>Get Started</Link>
                         {/* <Container className=' flex flex-col gap-0'>
                             <Container as='h5' className=' text-base md:text-lg font-semibold'>20k+</Container>
                             <Container as='p' className=' text-xs'>Happy clients</Container>
